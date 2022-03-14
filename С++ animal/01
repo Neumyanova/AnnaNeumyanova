@@ -1,0 +1,104 @@
+#включить "animal. h"
+#включить<iostream>
+#включить<sstream>
+использование пространства имен std;
+класс  Животное {
+Частное:
+    int life_expectancy;
+публика:
+    void setlife_expectancy(int NewLifeExpectancy) {life_expectancy = NewLifeExpectancy;}
+    int get_life_expectancy() const · return life_expectancy; }
+ string Animal:: about() const {
+ струнный поток ss;
+ ss < < "life_expectancy=" < ;
+        return ss.str();
+    }
+};
+класс Млекопитающее : общественное животное {
+Частное:
+    int pregnancyDuration;
+публика:
+    void setPregnancyDuration(int new_pregnancy_Duration) {pregnancyDuration=new_pregnancy_Duration;}
+    int get_pregnancy_duration() const { return pregnancyDuration; }
+    string Mammal::about() const {
+ струнный поток ss;
+ ss < < Animal:: about() < < "pregnancyDuration=" < ;
+        return ss.str();
+    }
+};
+класс Амфибия: общественное животное {
+Частное:
+    int how_long_can_breathe_in_water;
+публика:
+    void set_how_long_can_breathe_in_water(int new_how_long_can_breathe_in_water){ how_long_can_breathe_in_water = new_how_long_can_breathe_in_water;}
+    int get_how_long_can_breathe_in_water() const {return how_long_can_breathe_in_water; }
+ string Amphibia:: about() const {
+ струнный поток ss;
+ ss < < Animal:: about() < < "how_long_can_breathe_in_water=" < ;
+        return ss.str();
+    }
+};
+класс Cat : общественное млекопитающее {
+Частное:
+    int vibrissae_length;
+публика:
+    void set_vibrissae_length(int new_vibrissae_length) {vibrissae_length = new_vibrissae_length; }
+    int get_vibrissae_length() const {return vibrissae_length; }
+ строка Cat:: about() const {
+ струнный поток ss;
+ ss < < Mammal:: about() < < "vibrissae_length=" < ;
+        return ss.str();
+    }
+};
+класс Олень : общественное млекопитающее {
+Частное:
+    int horns_length;
+публика:
+    void set_horns_length(int new_horns_length) {horns_length=new_horns_length;}
+    int get_horns_length() const {return horns_length; }
+ string Deer:: about() const {
+ струнный поток ss;
+ ss < < Mammal:: about() < < "horns_length=" < ;
+        return ss.str();
+    }
+};
+класс Лягушка: общественная амфибия {
+Частное:
+    int how_far_stick_tougue_out;
+публика:
+    void set_how_far_stick_tougue_out(int new_how_far_stick_tougue_out) {how_far_stick_tougue_out = new_how_far_stick_tougue_out; }
+    int get_how_far_stick_tougue_out() const {return how_far_stick_tougue_out;}
+ струнная лягушка:: about() const {
+ струнный поток ss;
+ ss < < Amphibia:: about() < < · how_far_stick_tougue_out=" < ;
+        return ss.str();
+    }
+};
+класс Ящерица: общественная амфибия {
+Частное:
+    int how_long_tail_grow;
+публика:
+    void set_how_long_tail_grow(int new_how_long_tail_grow) {how_long_tail_grow = new_how_long_tail_grow; }
+    int get_how_long_tail_grow() const {return how_long_tail_grow; }
+ струнная ящерица:: about() const {
+ струнный поток ss;
+ ss < < Amphibia:: about() < < · how_long_tail_grow=" < ;
+        return ss.str();
+    }
+};
+
+
+int main() {
+ Cat c1();
+ c1 - > >set_vibrissae_length(6);
+ cout < < c1 < ;
+	возврат 0;
+} 
+ Кот кот();
+ Ящерица ящерица();
+    cat().set_vibrissae_length(6);
+    ящерица().set_how_long_tail_grow(5);
+    int res = cat().get_vibrissae_length();
+ cout << res <;
+    возврат 0;
+}
